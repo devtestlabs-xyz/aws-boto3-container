@@ -1,4 +1,4 @@
-# aws-boto3-container
+# AWS SDK Python image
 This project manages a streamline AWS SDK for Python OCI compliant image that can be used with Docker and Podman.
 
 The image is based on the [Official Python Docker image](https://hub.docker.com/_/python). [AWS SDK for Python - Boto3](https://aws.amazon.com/sdk-for-python/) and [Jinja2 Python templating engine](https://palletsprojects.com/p/jinja/) installed. The resulting image weighs in at about 169MB!
@@ -40,10 +40,8 @@ docker run \
 
 *NOTE: Volume bind mount host path where your Python scripts live. The `/src` path on container side is the working directory and by default the `python` command is executed. So all you have to do is specify which Python script you want to execute.*
 
-# Build the image locally
-```
-docker build -t aws-sdk-py .
-```
+# Github Project
+https://github.com/devtestlabs-xyz/aws-boto3-container
 
 # External References
 * https://hub.docker.com/_/python

@@ -1,0 +1,20 @@
+name: Build and Publish Docker
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish to Docker Repository
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: devtestlabs/aws-sdk-py
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PAT }}
+    - name: Docker Hub Description
+      uses: peter-evans/dockerhub-description@v2.1.0
+      env:
+        DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+        DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PAT }}
+        DOCKERHUB_REPOSITORY: devtestlabs/aws-sdk-py
+        README_FILEPATH: ./dockerhub/README.md
