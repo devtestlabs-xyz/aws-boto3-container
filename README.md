@@ -1,5 +1,5 @@
 # AWS SDK for Python image
-![](https://github.com/actions/devtestlabs-xyz/aws-boto3-container/workflows/Build%20and%20Publish%20Docker/badge.svg)
+![](https://github.com/devtestlabs-xyz/aws-boto3-container/workflows/Build%20and%20Publish%20Docker/badge.svg)
 This project manages the assets required to build a lightweight AWS SDK for Python (Boto3) OCI compliant image that can be used with Docker and Podman.
 
 The image is based on the [Official Python Docker image](https://hub.docker.com/_/python). [AWS SDK for Python - Boto3](https://aws.amazon.com/sdk-for-python/) and [Jinja2 Python templating engine](https://palletsprojects.com/p/jinja/) installed. The resulting image weighs in at about 169MB!
