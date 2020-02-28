@@ -17,4 +17,4 @@ jobs:
         DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PAT }}
         DOCKERHUB_REPOSITORY: ${{ secrets.DOCKERHUB_REPO }}
-        README_FILEPATH: ./dockerhub/README.md
+        README_FILEPATH: dockerhub/README.md
