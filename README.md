@@ -14,7 +14,7 @@ docker pull devtestlabs/aws-sdk-py
 ```
 
 ## Run the container
-If your goal is to execute python scripts that fetch meta-data from your AWS tenant you'll need to bind mount your AWS `credentials` file and optional `config` file.
+If your goal is to execute python scripts that fetch meta-data about resources or manipulate resources within your AWS tenant you'll need to bind mount your AWS `credentials` and optional `config` files.
 
 *.example .aws/credentials file*
 ```
